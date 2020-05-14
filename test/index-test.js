@@ -17,7 +17,7 @@ describe('App', () => {
   });
 
   it('should include "Now" in the header instead of a time', () => {
-    expect(wrapper.find('header').text()).to.not.include(moment().format('MMMM Do YYYY'))
+    expect(wrapper.find('header').text()).to.not.include(moment())
     expect(wrapper.find('header').text()).to.include('Now')
   });
 
